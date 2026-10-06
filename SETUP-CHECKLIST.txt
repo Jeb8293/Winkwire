@@ -1,0 +1,17 @@
+WINKWIRE CONCEPT A — FAST SETUP CHECKLIST
+
+[ ] 1. Shopify Admin > Settings > Domains: verify exact *.myshopify.com address.
+[ ] 2. If different, edit shopifyDomain in config.js.
+[ ] 3. Confirm products are Active and published to the storefront / Headless channel.
+[ ] 4. Optional: add a PUBLIC Storefront API token in config.js if Shopify requires it.
+[ ] 5. Add real email and phone in config.js.
+[ ] 6. Replace broad About copy with the owner's actual story/services.
+[ ] 7. Upload all project files to a new GitHub repository.
+[ ] 8. Enable GitHub Pages from main / root.
+[ ] 9. Preview the github.io version FIRST.
+[ ] 10. Test product, cart, variant, and Shopify checkout flow.
+[ ] 11. Only after approval: point winkwireelectronics.com to GitHub Pages.
+[ ] 12. Test the custom domain and enable HTTPS in GitHub Pages.
+
+SECURITY: Never put the Shopify Admin password, Admin API token, private Storefront token,
+or payment credentials into these files or GitHub.
