@@ -1,155 +1,80 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#050b16" />
-  <meta name="description" content="Winkwire Electronics — modern electronics, accessories, and secure Shopify checkout." />
-  <meta property="og:title" content="Winkwire Electronics" />
-  <meta property="og:description" content="Technology that connects. A modern storefront powered by Shopify." />
-  <meta property="og:image" content="assets/winkwire-logo.png" />
-  <title>Winkwire Electronics</title>
-  <link rel="icon" href="assets/winkwire-logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/site.css" />
-  <script src="config.js"></script>
-  <script defer src="assets/shopify.js"></script>
-  <script defer src="assets/app.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#040914">
+  <meta name="description" content="Wink Wire Electronics makes buying practical electronics simple, clear, and secure.">
+  <meta property="og:title" content="Wink Wire Electronics">
+  <meta property="og:description" content="Practical electronics. Clear information. Secure Shopify checkout.">
+  <meta property="og:image" content="assets/winkwire-logo.png">
+  <title>Wink Wire Electronics | Home</title>
+  <link rel="icon" href="assets/winkwire-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/page.js"></script>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
-  <div class="announcement"><span id="announcementText">Powered by Shopify checkout • Secure payments • Live product catalog</span></div>
-
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Winkwire Electronics home">
-      <img src="assets/winkwire-logo.png" alt="Winkwire Electronics" />
-    </a>
+  <div class="announcement">Secure Shopify checkout • Carefully selected electronics • Real support</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Wink Wire Electronics home"><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics"></a>
     <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#shop">Shop</a>
-      <a href="#why">Why Winkwire</a>
-      <a href="#about">About</a>
-      <a href="#support">Support</a>
+      <a class="active" href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
     <div class="header-actions">
-      <button class="icon-btn" id="searchToggle" aria-label="Search products" title="Search products">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
-      </button>
-      <button class="cart-button" id="cartOpen" aria-label="Open cart">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
-        <span>Cart</span><strong id="cartCount">0</strong>
-      </button>
-      <button class="menu-button" id="menuToggle" aria-label="Open menu"><span></span><span></span></button>
+      <a class="header-link" href="shop.html">Shop now</a>
+      <button class="menu-button" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
-
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <a href="#shop">Shop</a><a href="#why">Why Winkwire</a><a href="#about">About</a><a href="#support">Support</a>
-  </div>
-
-  <div class="search-panel" id="searchPanel" aria-hidden="true">
-    <div class="search-inner">
-      <label for="searchInput">Search Winkwire</label>
-      <div class="search-box"><input id="searchInput" type="search" placeholder="Search products, accessories, tech…" autocomplete="off" /><button id="searchClose" aria-label="Close search">×</button></div>
-      <div id="searchResults" class="search-results"></div>
-    </div>
-  </div>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div>
 
   <main>
     <section class="hero">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="orb orb-one" aria-hidden="true"></div><div class="orb orb-two" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div><div class="orb one"></div><div class="orb two"></div>
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="pulse"></span> Modern electronics. Smarter shopping.</div>
-        <h1>Tech that <span>connects</span><br />with your life.</h1>
-        <p>Discover the latest from Winkwire Electronics in a cleaner, faster storefront built around real-time Shopify inventory and secure checkout.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#shop">Shop the collection <span>↗</span></a>
-          <a class="btn ghost" href="#about">Meet Winkwire</a>
-        </div>
-        <div class="hero-stats">
-          <div><strong>Live</strong><span>Shopify inventory</span></div>
-          <div><strong>Secure</strong><span>Shopify checkout</span></div>
-          <div><strong>Fast</strong><span>Mobile-first storefront</span></div>
-        </div>
+        <div class="eyebrow">Technology should be simple.</div>
+        <h1>Useful tech.<br><span>No guesswork.</span></h1>
+        <p>Shop electronics and everyday accessories selected for usefulness, value, and reliability — with clear product information and secure checkout through Shopify.</p>
+        <div class="hero-actions"><a class="btn primary" href="shop.html">Shop Wink Wire <span>↗</span></a><a class="btn ghost" href="about.html">Why we started</a></div>
+        <div class="trust-row"><div><strong>Carefully chosen</strong><span>Practical products</span></div><div><strong>Clearly described</strong><span>No confusing listings</span></div><div><strong>Secure</strong><span>Shopify checkout</span></div></div>
       </div>
-      <div class="hero-art reveal delay-1">
-        <div class="logo-halo"></div>
-        <img src="assets/winkwire-logo.png" alt="Winkwire Electronics logo" />
-        <div class="signal-card signal-a"><span>01</span><strong>CONNECTED</strong></div>
-        <div class="signal-card signal-b"><span>SHOP</span><strong>POWERED BY SHOPIFY</strong></div>
-      </div>
-      <div class="scroll-cue">SCROLL <span></span></div>
+      <div class="hero-art reveal"><div class="halo"></div><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics logo"></div>
     </section>
 
-    <section class="feature-strip" id="why">
-      <div><span class="feature-icon">⌁</span><strong>Designed to move fast</strong><p>Lightweight, responsive, and clean on every screen.</p></div>
-      <div><span class="feature-icon">◈</span><strong>Connected to Shopify</strong><p>Products and checkout stay tied to the existing store.</p></div>
-      <div><span class="feature-icon">↗</span><strong>Checkout you already trust</strong><p>Customers finish their purchase through Shopify.</p></div>
+    <section class="feature-strip reveal" aria-label="Why shop Wink Wire">
+      <div><span class="num">01</span><strong>Products chosen with care</strong><p>We look at quality, usefulness, and value before products are added to the store.</p></div>
+      <div><span class="num">02</span><strong>Real support</strong><p>Questions about a product, order, or return are handled by a real person.</p></div>
+      <div><span class="num">03</span><strong>Simple, secure shopping</strong><p>Your checkout is handled through Shopify's secure commerce platform.</p></div>
     </section>
 
-    <section class="section shop-section" id="shop">
-      <div class="section-heading reveal">
-        <div><span class="kicker">THE WINKWIRE STORE</span><h2>Find your next upgrade.</h2></div>
-        <p>Products below load directly from Shopify when the storefront connection is available.</p>
-      </div>
-      <div class="shop-toolbar reveal">
-        <div id="categoryFilters" class="filter-pills"><button class="filter-pill active" data-filter="all">All products</button></div>
-        <select id="sortSelect" class="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="az">A–Z</option></select>
-      </div>
-      <div id="connectionNotice" class="connection-notice" hidden></div>
-      <div id="productGrid" class="product-grid" aria-live="polite">
-        <div class="product-skeleton"></div><div class="product-skeleton"></div><div class="product-skeleton"></div><div class="product-skeleton"></div>
-      </div>
-      <div class="center"><button id="loadMore" class="btn ghost" hidden>Load more</button></div>
-    </section>
-
-    <section class="visual-break">
-      <div class="visual-break-inner reveal">
-        <span>WINKWIRE / CONNECT / POWER / PLAY / CREATE /</span>
-        <h2>Built for the way<br /><em>technology feels now.</em></h2>
-        <a href="#shop" class="round-arrow" aria-label="Shop now">↗</a>
+    <section class="section">
+      <div class="section-heading reveal"><div><span class="kicker">SHOP BY NEED</span><h2>Tech for real life.</h2></div><p>From charging and connectivity to home and workspace essentials, Wink Wire focuses on products that earn their place in your day.</p></div>
+      <div class="category-grid reveal">
+        <a class="category-card" href="shop.html"><span>POWER</span><h3>Charging</h3><p>Cables, chargers, power accessories, and everyday essentials.</p></a>
+        <a class="category-card" href="shop.html"><span>CONNECT</span><h3>Accessories</h3><p>Simple add-ons that make your devices easier to use.</p></a>
+        <a class="category-card" href="shop.html"><span>HOME</span><h3>Smart Living</h3><p>Useful technology for the spaces where life happens.</p></a>
+        <a class="category-card" href="shop.html"><span>WORK</span><h3>Workspace</h3><p>Practical gadgets and accessories for a cleaner setup.</p></a>
       </div>
     </section>
 
-    <section class="section about-section" id="about">
-      <div class="about-card reveal">
-        <div class="about-logo-wrap"><img src="assets/winkwire-logo.png" alt="Winkwire Electronics" /></div>
-        <div class="about-copy"><span class="kicker">ABOUT WINKWIRE</span><h2>Less clutter. Better tech.</h2><p>Winkwire Electronics is built around a simple idea: technology should be easy to discover, compare, and buy. This storefront puts the products first, keeps the experience straightforward, and hands every transaction to Shopify's secure checkout.</p><p class="draft-note">This About copy is intentionally broad until the owner provides Winkwire's actual story, specialties, and service details.</p></div>
-      </div>
-    </section>
-
-    <section class="section support-section" id="support">
-      <div class="section-heading reveal"><div><span class="kicker">SUPPORT</span><h2>Need a hand?</h2></div><p>Questions before or after an order? Use the contact details below once they are added in <code>config.js</code>.</p></div>
-      <div class="support-grid reveal">
-        <a class="support-card" id="emailCard" href="#"><span>01</span><h3>Email Winkwire</h3><p id="emailText">Add a support email in config.js</p><b>↗</b></a>
-        <a class="support-card" id="phoneCard" href="#"><span>02</span><h3>Call</h3><p id="phoneText">Add a phone number in config.js</p><b>↗</b></a>
-        <a class="support-card" href="#shop"><span>03</span><h3>Shop</h3><p>Browse the live Shopify catalog.</p><b>↗</b></a>
-      </div>
+    <section class="story-band reveal">
+      <span class="kicker">THE WINK WIRE IDEA</span>
+      <h2>Technology should work as quickly and easily as <em>a wink.</em></h2>
+      <p>We built Wink Wire Electronics to make buying electronics less confusing. Clear information, fair value, and support that actually answers you.</p>
+      <a class="btn ghost" href="about.html">Read our story</a>
     </section>
   </main>
 
   <footer>
-    <div class="footer-brand"><img src="assets/winkwire-logo.png" alt="Winkwire Electronics" /><p>Technology that connects.</p></div>
-    <div class="footer-links"><div><strong>Navigate</strong><a href="#shop">Shop</a><a href="#about">About</a><a href="#support">Support</a></div><div><strong>Store</strong><a id="shopifyStoreLink" href="#" target="_blank" rel="noopener">Shopify storefront</a><a href="#top">Back to top</a></div></div>
-    <div class="footer-bottom"><span>© <span id="year"></span> Winkwire Electronics.</span><span>Custom storefront • Shopify checkout</span></div>
+    <div class="footer-brand"><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics"><p>Practical technology. Simple shopping.</p></div>
+    <div class="footer-links"><div><strong>Navigate</strong><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div><div><strong>Support</strong><a href="mailto:WinkWire@winkwire.com">WinkWire@winkwire.com</a><a href="tel:+17147889744">(714) 788-9744</a></div></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Wink Wire Electronics.</span><span>winkwireelectronics.com</span></div>
   </footer>
-
-  <div class="modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Product details">
-    <div class="modal-backdrop" data-close-product></div>
-    <div class="product-modal-card"><button class="modal-close" data-close-product aria-label="Close">×</button><div id="productModalContent"></div></div>
-  </div>
-
-  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
-    <div class="cart-backdrop" id="cartBackdrop"></div>
-    <div class="cart-panel">
-      <div class="cart-head"><div><span class="kicker">YOUR CART</span><h2>Ready when you are.</h2></div><button id="cartClose" aria-label="Close cart">×</button></div>
-      <div id="cartItems" class="cart-items"><div class="empty-cart"><span>◌</span><h3>Your cart is empty.</h3><p>Add something good.</p></div></div>
-      <div class="cart-foot" id="cartFoot" hidden><div class="cart-total"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div><p>Shipping, taxes, and discounts are calculated by Shopify at checkout.</p><button class="btn primary checkout-btn" id="checkoutBtn">Secure checkout <span>↗</span></button></div>
-    </div>
-  </aside>
-
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

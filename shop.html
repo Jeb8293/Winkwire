@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#040914"><meta name="description" content="Shop Wink Wire Electronics products with live Shopify inventory and secure checkout."><title>Shop | Wink Wire Electronics</title>
+  <link rel="icon" href="assets/winkwire-logo.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/site.css">
+  <script src="config.js"></script><script defer src="assets/shopify.js"></script><script defer src="assets/page.js"></script><script defer src="assets/shop.js"></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div><div class="announcement">Live Shopify catalog • Secure checkout • Real support</div>
+  <header class="site-header"><a class="brand" href="index.html"><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics"></a><nav class="desktop-nav"><a href="index.html">Home</a><a class="active" href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></nav><div class="header-actions"><button class="icon-btn" id="searchToggle" aria-label="Search products"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></button><button class="cart-button" id="cartOpen"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><span>Cart</span><strong id="cartCount">0</strong></button><button class="menu-button" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div></header>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div>
+
+  <div class="search-panel" id="searchPanel" aria-hidden="true"><div class="search-inner"><label for="searchInput">Search Wink Wire</label><div class="search-box"><input id="searchInput" type="search" placeholder="Search products, accessories, tech…" autocomplete="off"><button id="searchClose" aria-label="Close search">×</button></div><div id="searchResults" class="search-results"></div></div></div>
+
+  <main class="shop-shell">
+    <div class="shop-intro"><div><span class="kicker">THE WINK WIRE STORE</span><h1>Find your next upgrade.</h1></div><p>Live products load directly from Shopify. Add to cart here, then finish your order through Shopify's secure checkout.</p></div>
+    <div class="shop-toolbar"><div id="categoryFilters" class="filter-pills"><button class="filter-pill active" data-filter="all">All products</button></div><select id="sortSelect" class="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="az">A–Z</option></select></div>
+    <div id="connectionNotice" class="connection-notice" hidden></div>
+    <div id="productGrid" class="product-grid" aria-live="polite"><div class="product-skeleton"></div><div class="product-skeleton"></div><div class="product-skeleton"></div><div class="product-skeleton"></div></div>
+  </main>
+
+  <footer><div class="footer-brand"><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics"><p>Practical technology. Simple shopping.</p></div><div class="footer-links"><div><strong>Navigate</strong><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div><div><strong>Support</strong><a href="mailto:WinkWire@winkwire.com">WinkWire@winkwire.com</a><a href="tel:+17147889744">(714) 788-9744</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> Wink Wire Electronics.</span><span>Secure checkout powered by Shopify</span></div></footer>
+
+  <div class="modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Product details"><div class="modal-backdrop" data-close-product></div><div class="product-modal-card"><button class="modal-close" data-close-product aria-label="Close">×</button><div id="productModalContent"></div></div></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart"><div class="cart-backdrop" id="cartBackdrop"></div><div class="cart-panel"><div class="cart-head"><div><span class="kicker">YOUR CART</span><h2>Ready when you are.</h2></div><button id="cartClose" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><div class="empty-cart"><h3>Your cart is empty.</h3><p>Add something useful.</p></div></div><div class="cart-foot" id="cartFoot" hidden><div class="cart-total"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div><p>Shipping, taxes, and discounts are calculated by Shopify at checkout.</p><button class="btn primary checkout-btn" id="checkoutBtn">Secure checkout <span>↗</span></button></div></div></aside>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
