@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#040914">
+  <meta name="description" content="View current product details, price, availability, shipping and return information, and secure Shopify checkout.">
+  <link rel="canonical" href="https://winkwireelectronics.com/product.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wink Wire Electronics">
+  <meta property="og:title" content="Product | Wink Wire Electronics">
+  <meta property="og:description" content="View current product details, price, availability, shipping and return information, and secure Shopify checkout.">
+  <meta property="og:url" content="https://winkwireelectronics.com/product.html">
+  <meta property="og:image" content="https://winkwireelectronics.com/assets/winkwire-logo.png">
+  <title>Product | Wink Wire Electronics</title>
+  <link rel="icon" href="assets/winkwire-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="config.js"></script><script defer src="assets/shopify.js"></script><script defer src="assets/page.js"></script><script defer src="assets/product.js"></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="announcement">Secure Shopify checkout • Clear policies • Real customer support</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Wink Wire Electronics home"><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics"></a>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a class="active" href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></nav>
+    <div class="header-actions">
+      <a class="header-link" href="shop.html">Shop now</a>
+      <button class="menu-button" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div>
+  <main class="product-page-shell">
+    <div id="productPageNotice" class="connection-notice" hidden></div>
+    <div id="productPage" class="product-page-card" aria-live="polite">
+      <div class="product-page-loading"><div class="product-skeleton"></div><div><span class="kicker">LOADING PRODUCT</span><h1>Just a moment…</h1></div></div>
+    </div>
+    <div class="product-policy-grid">
+      <a href="shipping.html"><strong>Shipping</strong><span>See processing, delivery estimates, and tracking information.</span></a>
+      <a href="returns.html"><strong>Returns & refunds</strong><span>Standard return requests are accepted within 30 days, subject to policy terms.</span></a>
+      <a href="contact.html"><strong>Need help?</strong><span>Contact Wink Wire Electronics by email or phone before or after purchase.</span></a>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/winkwire-logo.png" alt="Wink Wire Electronics">
+      <p>Practical technology. Simple shopping. Clear customer policies.</p>
+      <p class="business-note">Wink Wire Electronics is the storefront operated at winkwireelectronics.com.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <strong>Navigate</strong>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div>
+        <strong>Customer care</strong>
+        <a href="shipping.html">Shipping Policy</a>
+        <a href="returns.html">Returns &amp; Refunds</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:WinkWire@winkwire.com">WinkWire@winkwire.com</a>
+        <a href="tel:+17147889744">(714) 788-9744</a>
+        <span>winkwireelectronics.com</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Wink Wire Electronics.</span>
+      <span>Secure checkout powered by Shopify</span>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

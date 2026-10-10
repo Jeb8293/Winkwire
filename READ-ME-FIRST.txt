@@ -1,0 +1,59 @@
+WINK WIRE ELECTRONICS — GOOGLE MERCHANT CENTER FIX PACKAGE
+Created October 9, 2026
+
+WHAT THIS PACKAGE DOES
+- Adds visible Shipping, Returns & Refunds, Privacy, and Terms pages.
+- Adds policy links to every page footer.
+- Makes business identity/contact information more explicit.
+- Removes fake/demo fallback products and fake placeholder prices.
+- Changes the catalog loader from the first 100 products to up to 1,000 live Shopify products.
+- Adds a dedicated product.html page with a stable query-string URL, current Shopify data, and Product structured data.
+- Adds Organization/OnlineStore structured data.
+- Adds robots.txt and sitemap.xml.
+- Adds canonical URLs and improves indexability.
+- Replaces the old “redirect every missing page to home” 404 behavior.
+- Preserves Shopify secure checkout routing.
+
+IMPORTANT: KEEP YOUR EXISTING LOGO FILE
+This ZIP intentionally does not contain assets/winkwire-logo.png because that binary logo is already in your current GitHub repository.
+DO NOT delete assets/winkwire-logo.png.
+Upload/replace the files from this ZIP over the matching files in your existing repository.
+
+UPLOAD
+1. Unzip this package.
+2. In the Jeb8293/Winkwire repository, upload the CONTENTS of this folder, preserving the assets folder.
+3. Replace files when GitHub asks.
+4. Do NOT remove assets/winkwire-logo.png.
+5. Wait for GitHub Pages to deploy.
+6. Test:
+   https://winkwireelectronics.com/
+   https://winkwireelectronics.com/shop.html
+   https://winkwireelectronics.com/shipping.html
+   https://winkwireelectronics.com/returns.html
+   https://winkwireelectronics.com/privacy.html
+   https://winkwireelectronics.com/terms.html
+
+CRITICAL MERCHANT CENTER NOTE
+Your store is a custom GitHub Pages front end connected to Shopify. Google Merchant Center product links frequently use Shopify-style URLs such as:
+https://winkwireelectronics.com/products/product-handle
+
+GitHub Pages cannot natively serve a real HTTP 200 page for an unlimited dynamic /products/{handle} route. This package adds a browser redirect from those routes to:
+https://winkwireelectronics.com/product.html?handle=product-handle
+
+That improves the shopper experience, but Google may still treat the original /products/{handle} request as an HTTP 404 before the redirect executes.
+
+Before requesting another Merchant Center review, inspect several disapproved items in Merchant Center and look at their “Landing page” URLs. If they use /products/{handle}, the strongest fix is either:
+A) have Shopify host winkwireelectronics.com so Shopify can serve /products/{handle} directly, OR
+B) change the product landing URLs in the feed to the 200-status product.html?handle=... format.
+
+Do not request a new Google review until the live pages and checkout have been tested.
+
+POLICY ASSUMPTIONS INCLUDED IN THIS PACKAGE
+The new policy pages use consumer-friendly defaults:
+- Orders generally process in 1–3 business days.
+- Standard U.S. delivery commonly takes about 3–10 business days after processing.
+- Standard return requests may be made within 30 days after delivery.
+- Preference-based return shipping is generally paid by the customer.
+- Approved refunds commonly take 5–10 business days to post after issuance.
+
+Review these terms and change them if they do not match how Wink Wire actually fulfills orders. Google cares more about accurate, consistent policies than aggressive promises.

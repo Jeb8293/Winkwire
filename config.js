@@ -6,5 +6,6 @@ window.WINKWIRE_CONFIG = {
   siteDomain: "winkwireelectronics.com",
   contactEmail: "WinkWire@winkwire.com",
   phone: "(714) 788-9744",
-  announcement: "Secure Shopify checkout • Carefully selected electronics • Real support"
+  phoneE164: "+17147889744",
+  announcement: "Secure Shopify checkout • Clear policies • Real customer support"
 };
