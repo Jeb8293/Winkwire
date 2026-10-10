@@ -3,6 +3,7 @@
   const $$ = (s) => [...document.querySelectorAll(s)];
   const menu = $('#mobileMenu');
   const toggle = $('#menuToggle');
+
   if (menu && toggle) {
     toggle.addEventListener('click', () => {
       const open = menu.classList.toggle('open');
