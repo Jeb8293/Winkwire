@@ -4,121 +4,216 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#040914">
-  <meta name="description" content="Shop practical electronics and everyday accessories with clear product information, customer policies, and secure Shopify checkout.">
+  <meta name="description" content="Wink Wire Electronics is temporarily offline while we upgrade our inventory and refresh our product selection.">
   <link rel="canonical" href="https://winkwireelectronics.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Wink Wire Electronics">
-  <meta property="og:title" content="Wink Wire Electronics | Practical Electronics & Accessories">
-  <meta property="og:description" content="Shop practical electronics and everyday accessories with clear product information, customer policies, and secure Shopify checkout.">
+  <meta property="og:title" content="Wink Wire Electronics | Inventory Upgrade in Progress">
+  <meta property="og:description" content="We're refreshing our product selection and bringing in new inventory. Check back soon.">
   <meta property="og:url" content="https://winkwireelectronics.com/">
   <meta property="og:image" content="https://winkwireelectronics.com/assets/winkwire-logo.png">
-  <title>Wink Wire Electronics | Practical Electronics & Accessories</title>
+  <title>Wink Wire Electronics | Inventory Upgrade in Progress</title>
   <link rel="icon" href="assets/winkwire-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/site.css">
-  <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"OnlineStore",
-  "name":"Wink Wire Electronics",
-  "url":"https://winkwireelectronics.com/",
-  "email":"WinkWire@winkwire.com",
-  "telephone":"+1-714-788-9744",
-  "logo":"https://winkwireelectronics.com/assets/winkwire-logo.png",
-  "description":"Online electronics and accessories store with secure Shopify checkout and customer support."
-}
-</script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #040914;
+      --line: rgba(255,255,255,.10);
+      --text: #f7f9ff;
+      --muted: #aab5cb;
+      --accent: #7c5cff;
+      --accent2: #32d5ff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(124,92,255,.20), transparent 34%),
+        radial-gradient(circle at 82% 75%, rgba(50,213,255,.13), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .14;
+      background-image:
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, #000, transparent 88%);
+    }
+    .page {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 24px 0;
+    }
+    .brand img {
+      display: block;
+      width: min(200px, 46vw);
+      height: auto;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .status::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent2);
+      box-shadow: 0 0 18px rgba(50,213,255,.9);
+    }
+    main {
+      display: grid;
+      place-items: center;
+      padding: 56px 20px 72px;
+    }
+    .card {
+      width: min(880px, 100%);
+      padding: clamp(38px, 7vw, 76px);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background: linear-gradient(145deg, rgba(13,22,43,.88), rgba(6,12,26,.78));
+      box-shadow: 0 30px 100px rgba(0,0,0,.38);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      right: -190px;
+      top: -180px;
+      background: radial-gradient(circle, rgba(124,92,255,.30), transparent 68%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 22px;
+      color: #cfd6ff;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 760px;
+      margin: 0 auto;
+      font-family: "Space Grotesk", Inter, sans-serif;
+      font-size: clamp(42px, 8vw, 78px);
+      line-height: .98;
+      letter-spacing: -.055em;
+    }
+    h1 span {
+      display: block;
+      background: linear-gradient(90deg, #b5a7ff, #6be6ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .lead {
+      max-width: 650px;
+      margin: 28px auto 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2.4vw, 20px);
+      line-height: 1.7;
+    }
+    .message {
+      max-width: 680px;
+      margin: 30px auto 0;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: #dfe5f2;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    .coming-soon {
+      display: inline-flex;
+      margin-top: 30px;
+      padding: 13px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(124,92,255,.38);
+      background: rgba(124,92,255,.10);
+      color: #e8e4ff;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    footer {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 22px 0 30px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: #7f8ba4;
+      font-size: 12px;
+      border-top: 1px solid rgba(255,255,255,.07);
+    }
+    footer a { color: #aebbd3; text-decoration: none; }
+    footer a:hover { color: #fff; }
+    @media (max-width: 650px) {
+      header { padding-top: 18px; }
+      .status { display: none; }
+      main { padding-top: 30px; }
+      .card { border-radius: 24px; }
+      footer { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="announcement">Secure Shopify checkout • Clear policies • Real customer support</div>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Wink Wire Electronics home"><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics"></a>
-    <nav class="desktop-nav" aria-label="Primary navigation"><a class="active" href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></nav>
-    <div class="header-actions">
-      <a class="header-link" href="shop.html">Shop now</a>
-      <button class="menu-button" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
-    </div>
-  </header>
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div>
-  <main>
-    <section class="hero">
-      <div class="hero-grid" aria-hidden="true"></div><div class="orb one"></div><div class="orb two"></div>
-      <div class="hero-copy reveal">
-        <div class="eyebrow">Technology should be simple.</div>
-        <h1>Useful tech.<br><span>No guesswork.</span></h1>
-        <p>Shop electronics and everyday accessories selected for usefulness, value, and reliability—with clear product information, visible customer policies, and secure checkout through Shopify.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="shop.html">Shop Wink Wire <span>↗</span></a>
-          <a class="btn ghost" href="about.html">Why we started</a>
-        </div>
-        <div class="trust-row">
-          <div><strong>Clear policies</strong><span>Shipping, returns & privacy</span></div>
-          <div><strong>Real support</strong><span>Email or phone assistance</span></div>
-          <div><strong>Secure checkout</strong><span>Powered by Shopify</span></div>
-        </div>
-      </div>
-      <div class="hero-art reveal"><div class="halo"></div><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics logo"></div>
-    </section>
+  <div class="page">
+    <header>
+      <div class="brand"><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics"></div>
+      <div class="status">Inventory upgrade in progress</div>
+    </header>
 
-    <section class="feature-strip reveal" aria-label="Why shop Wink Wire">
-      <div><span class="num">01</span><strong>Products chosen with care</strong><p>We focus on practical electronics and accessories with clear descriptions and straightforward pricing.</p></div>
-      <div><span class="num">02</span><strong>Customer support</strong><p>Questions about a product, order, shipment, return, or refund can be directed to our published support channels.</p></div>
-      <div><span class="num">03</span><strong>Transparent shopping</strong><p>Our shipping, return, privacy, and terms pages are available before you purchase.</p></div>
-    </section>
+    <main>
+      <section class="card" aria-labelledby="upgrade-heading">
+        <div class="eyebrow">Something new is coming</div>
+        <h1 id="upgrade-heading">We’re upgrading <span>our inventory.</span></h1>
+        <p class="lead">Wink Wire is temporarily offline while we refresh our product selection and bring in new inventory.</p>
+        <p class="message">We’re working behind the scenes to make the store better, with updated products and more options coming soon. Thank you for your patience while we make these improvements. Please check back soon—we’ll be reopening with a fresh lineup.</p>
+        <div class="coming-soon">New inventory coming soon</div>
+      </section>
+    </main>
 
-    <section class="section">
-      <div class="section-heading reveal"><div><span class="kicker">SHOP BY NEED</span><h2>Tech for real life.</h2></div><p>From charging and connectivity to home and workspace essentials, Wink Wire focuses on products that earn their place in your day.</p></div>
-      <div class="category-grid reveal">
-        <a class="category-card" href="shop.html"><span>POWER</span><h3>Charging</h3><p>Cables, chargers, power accessories, and everyday essentials.</p></a>
-        <a class="category-card" href="shop.html"><span>CONNECT</span><h3>Accessories</h3><p>Simple add-ons that make your devices easier to use.</p></a>
-        <a class="category-card" href="shop.html"><span>HOME</span><h3>Smart Living</h3><p>Useful technology for the spaces where life happens.</p></a>
-        <a class="category-card" href="shop.html"><span>WORK</span><h3>Workspace</h3><p>Practical gadgets and accessories for a cleaner setup.</p></a>
-      </div>
-    </section>
+    <footer>
+      <span>© <span id="year"></span> Wink Wire Electronics</span>
+      <a href="mailto:WinkWire@winkwire.com">WinkWire@winkwire.com</a>
+    </footer>
+  </div>
 
-    <section class="story-band reveal">
-      <span class="kicker">THE WINK WIRE IDEA</span>
-      <h2>Technology should work as quickly and easily as <em>a wink.</em></h2>
-      <p>Wink Wire Electronics was created to make buying everyday electronics less confusing. We aim for clear information, fair value, accessible support, and policies customers can review before buying.</p>
-      <div class="hero-actions"><a class="btn ghost" href="about.html">Read our story</a><a class="btn ghost" href="returns.html">View returns</a></div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-brand">
-      <img src="assets/winkwire-logo.png" alt="Wink Wire Electronics">
-      <p>Practical technology. Simple shopping. Clear customer policies.</p>
-      <p class="business-note">Wink Wire Electronics is the storefront operated at winkwireelectronics.com.</p>
-    </div>
-    <div class="footer-links">
-      <div>
-        <strong>Navigate</strong>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-      <div>
-        <strong>Customer care</strong>
-        <a href="shipping.html">Shipping Policy</a>
-        <a href="returns.html">Returns &amp; Refunds</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <a href="mailto:WinkWire@winkwire.com">WinkWire@winkwire.com</a>
-        <a href="tel:+17147889744">(714) 788-9744</a>
-        <span>winkwireelectronics.com</span>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Wink Wire Electronics.</span>
-      <span>Secure checkout powered by Shopify</span>
-    </div>
-  </footer>
-  <script defer src="assets/page.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
