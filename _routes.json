@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "include": [
+    "/products/*",
+    "/policies/*",
+    "/contact",
+    "/merchant-feed.xml",
+    "/config.js",
+    "/sitemap.xml"
+  ],
+  "exclude": []
+}
