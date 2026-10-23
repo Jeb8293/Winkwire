@@ -1,83 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#040914">
-  <meta name="description" content="Browse live Wink Wire Electronics inventory with clear prices, availability, product details, and secure Shopify checkout.">
-  <link rel="canonical" href="https://winkwireelectronics.com/shop.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Wink Wire Electronics">
-  <meta property="og:title" content="Shop Electronics & Accessories | Wink Wire Electronics">
-  <meta property="og:description" content="Browse live Wink Wire Electronics inventory with clear prices, availability, product details, and secure Shopify checkout.">
-  <meta property="og:url" content="https://winkwireelectronics.com/shop.html">
-  <meta property="og:image" content="https://winkwireelectronics.com/assets/winkwire-logo.png">
-  <title>Shop Electronics & Accessories | Wink Wire Electronics</title>
-  <link rel="icon" href="assets/winkwire-logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/site.css">
-  <script src="config.js"></script><script defer src="assets/shopify.js"></script><script defer src="assets/page.js"></script><script defer src="assets/shop.js"></script>
+  <meta name="theme-color" content="#060b16">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script defer src="/assets/config.js"></script>
+  <script defer src="/assets/site.js"></script>
+
+  <title>Shop | Winkwire Electronics & More</title>
+  <meta name="description" content="Browse the live WinkWire catalog with current Shopify pricing and availability.">
+  <link rel="canonical" href="https://winkwireelectronics.com/shop">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="WinkWire"><meta property="og:title" content="Shop | Winkwire Electronics & More"><meta property="og:description" content="Browse the live WinkWire catalog with current Shopify pricing and availability."><meta property="og:url" content="https://winkwireelectronics.com/shop"><meta property="og:image" content="https://winkwireelectronics.com/assets/winkwire-logo.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Winkwire Electronics & More","url":"https://winkwireelectronics.com/","logo":"https://winkwireelectronics.com/assets/winkwire-logo.png","email":"Winkwire@winkwire.com","telephone":"+17147889744","address":{"@type":"PostalAddress","streetAddress":"11 8th St","addressLocality":"Saint Augustine","addressRegion":"FL","postalCode":"32080","addressCountry":"US"},"contactPoint":{"@type":"ContactPoint","contactType":"customer service","email":"Winkwire@winkwire.com","telephone":"+17147889744","availableLanguage":"en-US"}}</script>
 </head>
-<body>
-  <div class="noise" aria-hidden="true"></div><div class="announcement">Live Shopify catalog • Secure checkout • Published customer policies</div>
-  <header class="site-header">
-    <a class="brand" href="index.html"><img src="assets/winkwire-logo.png" alt="Wink Wire Electronics"></a>
-    <nav class="desktop-nav"><a href="index.html">Home</a><a class="active" href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></nav>
-    <div class="header-actions">
-      <button class="icon-btn" id="searchToggle" aria-label="Search products"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></button>
-      <button class="cart-button" id="cartOpen"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><span>Cart</span><strong id="cartCount">0</strong></button>
-      <button class="menu-button" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+<body class="shop-page">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="announcement">Secure Shopify checkout <span>•</span> Clear policies <span>•</span> Real customer support</div>
+  <header class="site-header" id="top">
+    <div class="shell header-row">
+      <a class="brand" href="/" aria-label="WinkWire home"><img src="/assets/winkwire-logo.webp" alt="WinkWire Electronics"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="/">Home</a><a href="/shop">Shop</a><a href="/about">About</a><a href="/faq">FAQ</a><a href="/contact">Contact</a>
+      </nav>
+      <button class="cart-trigger" id="cartTrigger" type="button" aria-controls="cartDrawer" aria-expanded="false">Cart <span id="cartCount" class="cart-count">0</span></button>
     </div>
   </header>
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div>
 
-  <div class="search-panel" id="searchPanel" aria-hidden="true"><div class="search-inner"><label for="searchInput">Search Wink Wire</label><div class="search-box"><input id="searchInput" type="search" placeholder="Search products, accessories, tech…" autocomplete="off"><button id="searchClose" aria-label="Close search">×</button></div><div id="searchResults" class="search-results"></div></div></div>
+<main id="main"><section class="page-hero"><div class="shell"><span class="eyebrow">Live catalog</span><h1>Shop WinkWire.</h1><p>Products, prices, and availability below are pulled directly from Shopify. Use search, collections, and sorting to narrow the catalog.</p></div></section><section class="section compact"><div class="shell"><div class="collection-chips" id="collectionChips" aria-label="Product collections"><span class="chip">Loading collections…</span></div><div class="shop-tools"><input class="field" id="catalogSearch" type="search" placeholder="Search loaded products" aria-label="Search products"><select class="field" id="catalogSort" aria-label="Sort products"><option value="featured">Featured</option><option value="title">A–Z</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option></select><span class="catalog-status" id="catalogStatus">Loading…</span></div><div class="product-grid" id="catalogGrid"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div><div class="load-more-wrap"><button class="button secondary" id="loadMore" type="button" hidden>Load more products</button></div></div></section></main>
 
-  <main class="shop-shell">
-    <div class="shop-intro"><div><span class="kicker">THE WINK WIRE STORE</span><h1>Find your next upgrade.</h1></div><p>Products are loaded from our Shopify catalog. Select an item for a dedicated product page with current pricing, availability, details, and secure checkout.</p></div>
-    <div class="policy-strip"><a href="shipping.html">Shipping policy</a><a href="returns.html">30-day return requests</a><a href="contact.html">Customer support</a></div>
-    <div class="shop-toolbar"><div id="categoryFilters" class="filter-pills"><button class="filter-pill active" data-filter="all">All products</button></div><select id="sortSelect" class="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="az">A–Z</option></select></div>
-    <div id="connectionNotice" class="connection-notice" hidden></div>
-    <div id="productGrid" class="product-grid" aria-live="polite"><div class="product-skeleton"></div><div class="product-skeleton"></div><div class="product-skeleton"></div><div class="product-skeleton"></div></div>
-  </main>
-
-  <footer>
-    <div class="footer-brand">
-      <img src="assets/winkwire-logo.png" alt="Wink Wire Electronics">
-      <p>Practical technology. Simple shopping. Clear customer policies.</p>
-      <p class="business-note">Wink Wire Electronics is the storefront operated at winkwireelectronics.com.</p>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <section class="footer-brand"><img src="/assets/winkwire-logo.webp" alt="WinkWire Electronics"><p>Useful products, straightforward shopping, and secure Shopify checkout.</p></section>
+      <nav aria-label="Store"><h2>Store</h2><a href="/shop">Shop all</a><a href="/about">About us</a><a href="/faq">FAQ</a><a href="/contact">Contact</a></nav>
+      <nav aria-label="Policies"><h2>Policies</h2><a href="/policies/shipping">Shipping policy</a><a href="/policies/refund">Returns &amp; refunds</a><a href="/policies/privacy">Privacy policy</a><a href="/policies/terms">Terms of service</a></nav>
+      <section class="footer-contact"><h2>Customer service</h2><a href="mailto:Winkwire@winkwire.com">Winkwire@winkwire.com</a><a href="tel:+17147889744">(714) 788-9744</a><address>11 8th St<br>Saint Augustine, FL 32080</address><p class="micro">Business/mailing address. Online retailer — no walk-in storefront.</p></section>
     </div>
-    <div class="footer-links">
-      <div>
-        <strong>Navigate</strong>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-      <div>
-        <strong>Customer care</strong>
-        <a href="shipping.html">Shipping Policy</a>
-        <a href="returns.html">Returns &amp; Refunds</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <a href="mailto:WinkWire@winkwire.com">WinkWire@winkwire.com</a>
-        <a href="tel:+17147889744">(714) 788-9744</a>
-        <span>winkwireelectronics.com</span>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Wink Wire Electronics.</span>
-      <span>Secure checkout powered by Shopify</span>
-    </div>
+    <div class="shell footer-bottom"><span>© <span data-year></span> Winkwire Electronics & More. All rights reserved.</span><span>winkwireelectronics.com</span></div>
   </footer>
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="cartHeading">
+    <div class="cart-head"><div><span class="eyebrow">Your cart</span><h2 id="cartHeading">Ready when you are.</h2></div><button class="close-cart" id="closeCart" type="button" aria-label="Close cart">×</button></div>
+    <div id="cartBody" class="cart-body"><div class="cart-loading">Loading cart…</div></div>
+    <div id="cartFooter" class="cart-foot"></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart"><div class="cart-backdrop" id="cartBackdrop"></div><div class="cart-panel"><div class="cart-head"><div><span class="kicker">YOUR CART</span><h2>Ready when you are.</h2></div><button id="cartClose" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><div class="empty-cart"><h3>Your cart is empty.</h3><p>Add something useful.</p></div></div><div class="cart-foot" id="cartFoot" hidden><div class="cart-total"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div><p>Shipping, taxes, and discounts are shown by Shopify at checkout.</p><button class="btn primary checkout-btn" id="checkoutBtn">Secure checkout <span>↗</span></button></div></div></aside>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-</body>
-</html>
+  <script defer src="/assets/storefront.js"></script>
+  <script defer src="/assets/cart.js"></script>
+  <script defer src="/assets/catalog.js"></script>
+</body></html>

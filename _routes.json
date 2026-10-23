@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "include": [
+    "/api/storefront",
+    "/products/*",
+    "/policies/*",
+    "/merchant-feed.xml",
+    "/sitemap.xml",
+    "/compliance-status.json"
+  ],
+  "exclude": [
+    "/assets/*"
+  ]
+}
