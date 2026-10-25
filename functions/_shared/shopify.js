@@ -1,5 +1,5 @@
 export const DEFAULTS = Object.freeze({
-  domain: "pv0v77-4v.myshopify.com",
+  domain: "winkwire.myshopify.com",
   apiVersion: "2026-10",
   origin: "https://winkwireelectronics.com",
   business: Object.freeze({
