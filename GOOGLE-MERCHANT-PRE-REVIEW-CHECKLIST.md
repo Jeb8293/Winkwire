@@ -19,7 +19,7 @@ The site states the address is a business/mailing address for an online retailer
 - `https://winkwireelectronics.com` loads without warnings.
 - Merchant Center's claimed/verified website is exactly `winkwireelectronics.com`.
 - Product feed landing-page URLs use `winkwireelectronics.com/products/...`.
-- Old feed URLs pointing to `pv0v77-4v.myshopify.com` are removed or replaced.
+- Old feed URLs pointing to the previous Shopify domain are removed or replaced.
 - No duplicate product source is submitting the same inventory with conflicting URLs.
 
 ## 3. Policies

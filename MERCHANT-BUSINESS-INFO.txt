@@ -6,6 +6,6 @@ Customer-service phone: (714) 788-9744
 Business/mailing address: 11 8th St, Saint Augustine, FL 32080
 Business type: Online retailer — no walk-in storefront
 Public website: https://winkwireelectronics.com
-Permanent Shopify domain: pv0v77-4v.myshopify.com
+Permanent Shopify domain: winkwire.myshopify.com
 
 Use these values consistently in Merchant Center, the website, Shopify business/contact settings, and customer-service settings unless the business information itself changes.

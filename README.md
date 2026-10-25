@@ -9,7 +9,7 @@ This is the complete custom storefront for **Winkwire Electronics & More** at **
 - Customer-service phone: **(714) 788-9744**
 - Business/mailing address: **11 8th St, Saint Augustine, FL 32080**
 - Public domain: **https://winkwireelectronics.com**
-- Permanent Shopify domain: **pv0v77-4v.myshopify.com**
+- Permanent Shopify domain: **winkwire.myshopify.com**
 - Shopify Storefront API: **2026-10**
 
 The website explicitly states that WinkWire is an **online retailer** and that the listed address is not a walk-in storefront.
@@ -53,7 +53,7 @@ Shopify remains the system of record for products, prices, availability, cart, c
 
 Nothing secret is required for the default tokenless setup. These variables only override the built-in production values:
 
-- `SHOPIFY_STORE_DOMAIN` — defaults to `pv0v77-4v.myshopify.com`
+- `SHOPIFY_STORE_DOMAIN` — defaults to `winkwire.myshopify.com`
 - `SHOPIFY_API_VERSION` — defaults to `2026-10`
 - `PUBLIC_ORIGIN` — defaults to `https://winkwireelectronics.com`
 - `SHOPIFY_STOREFRONT_TOKEN` — optional browser-safe/public token if the store later requires authenticated Storefront requests. **Do not use an Admin token or private token here.**
